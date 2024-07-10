@@ -15,14 +15,6 @@ def process_domains_file(filename):
     with open(filename, 'r') as file:
         domains = [line.strip() for line in file.readlines()]
 
-#    newDomains = []
-
-#    for i in domains:
-#        if len(i.split(".")) > 2:
-#            newDomains.append('.'.join(urlparse(i).path.split('.')[1:]))
-#        else:
-#            newDomains.append(i)
-
     entropies = []
     for domain in domains:
         entropy = calculate_entropy(list(domain))
