@@ -8,7 +8,7 @@ These scripts use the Shannon formula to generate an entropy score. The higher t
 However, there are a lot of normal sites with relatively high entropy scores, for example: en.wikipedia.org has a score of 3.45, compared to this random example: qxe8g4xm.example.com has a score of 3.51.
 
 These are meant to be run through command line using python3 with an argument being the file of domain names. for example:
-python3 entropy.py domains.txt
+python3 entropy.py domains.txt  
 the txt file can be anything as long as it's a list of URLs
 
 There is a line at the top of the scripts to run them from bash, if you don't want that just delete it, or if you do make sure you chmod it to be executed
